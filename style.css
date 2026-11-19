@@ -1,0 +1,201 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #071525, #102d50);
+  color: white;
+  padding: 25px 15px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+
+.auth-card {
+  background: #172b43;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px #0005;
+  margin-top: 20px;
+}
+
+.logo {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #38bdf8;
+  letter-spacing: 3px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #a9bdd2;
+  margin: 10px 0 28px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 7px;
+  color: #d4e3f3;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 9px;
+  border: 1px solid #36516e;
+  background: #0c1c30;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #38bdf8;
+}
+
+.password-box {
+  display: flex;
+  gap: 5px;
+}
+
+.password-box input {
+  flex: 1;
+}
+
+.password-box button {
+  padding: 0 12px;
+  background: #29445f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 9px;
+  background: #0284c7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #0369a1;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 22px;
+  color: #bdcde0;
+  font-size: 14px;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.message {
+  color: #fb7185;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.admin-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard {
+  max-width: 700px;
+  margin: auto;
+}
+
+header {
+  background: #172b43;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  color: #38bdf8;
+  margin: 0;
+}
+
+header p {
+  color: #a9bdd2;
+  margin-top: 5px;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.welcome {
+  padding: 30px 5px;
+}
+
+.welcome p {
+  color: #a9bdd2;
+}
+
+.info-card {
+  background: #172b43;
+  padding: 22px;
+  margin-bottom: 17px;
+  border-radius: 12px;
+}
+
+.info-card h3 {
+  color: #38bdf8;
+  margin-bottom: 16px;
+}
+
+.info-card p {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+  color: #dce8f5;
+}
+
+@media(max-width: 480px) {
+  .auth-card {
+    padding: 23px;
+  }
+}

@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARKOVA - Login Pelanggan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- LOGIN -->
+    <section id="loginSection" class="auth-card">
+      <div class="logo">🚘</div>
+      <h1>PARKOVA</h1>
+      <p class="subtitle">Smart Parking Management</p>
+
+      <h2>Login Pelanggan</h2>
+
+      <form id="loginForm">
+        <label>Email</label>
+        <input type="email" id="loginEmail"
+          placeholder="Masukkan email" required>
+
+        <label>Password</label>
+        <div class="password-box">
+          <input type="password" id="loginPassword"
+            placeholder="Masukkan password" required>
+          <button type="button"
+            onclick="togglePassword('loginPassword')">👁</button>
+        </div>
+
+        <button type="submit" class="primary-btn">
+          MASUK
+        </button>
+      </form>
+
+      <p id="loginMessage" class="message"></p>
+
+      <p class="switch">
+        Belum punya akun?
+        <a href="#" onclick="showRegister()">Daftar sekarang</a>
+      </p>
+
+      <button class="admin-btn" onclick="showAdmin()">
+        Login Admin
+      </button>
+    </section>
+
+    <!-- REGISTER -->
+    <section id="registerSection" class="auth-card hidden">
+      <div class="logo">👤</div>
+      <h1>PARKOVA</h1>
+      <p class="subtitle">Buat akun pelanggan baru</p>
+
+      <h2>Registrasi Pelanggan</h2>
+
+      <form id="registerForm">
+        <label>Nama Lengkap</label>
+        <input type="text" id="regName"
+          placeholder="Nama lengkap" required>
+
+        <label>Nomor HP</label>
+        <input type="tel" id="regPhone"
+          placeholder="08xxxxxxxxxx" required>
+
+        <label>Email</label>
+        <input type="email" id="regEmail"
+          placeholder="Alamat email" required>
+
+        <label>Password</label>
+        <input type="password" id="regPassword"
+          placeholder="Minimal 8 karakter" minlength="8" required>
+
+        <label>Konfirmasi Password</label>
+        <input type="password" id="regConfirm"
+          placeholder="Ulangi password" minlength="8" required>
+
+        <button type="submit" class="primary-btn">
+          DAFTAR SEKARANG
+        </button>
+      </form>
+
+      <p id="registerMessage" class="message"></p>
+
+      <p class="switch">
+        Sudah punya akun?
+        <a href="#" onclick="showLogin()">Login di sini</a>
+      </p>
+    </section>
+
+    <!-- DASHBOARD PELANGGAN -->
+    <section id="dashboardSection" class="dashboard hidden">
+      <header>
+        <div>
+          <h2>🚘 PARKOVA</h2>
+          <p>Dashboard Pelanggan</p>
+        </div>
+        <button onclick="logout()" class="logout-btn">
+          Logout
+        </button>
+      </header>
+
+      <div class="welcome">
+        <h2 id="welcomeName">Selamat Datang</h2>
+        <p>Selamat menggunakan layanan PARKOVA.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>👤 Informasi Akun</h3>
+        <p id="profileName"></p>
+        <p id="profilePhone"></p>
+        <p id="profileEmail"></p>
+      </div>
+
+      <div class="info-card">
+        <h3>🚗 Kendaraan Saya</h3>
+        <div id="vehicleData">
+          Belum ada data kendaraan.
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>📋 Riwayat Parkir</h3>
+        <div id="historyData">
+          Belum ada riwayat parkir.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
